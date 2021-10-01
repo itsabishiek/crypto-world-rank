@@ -1,0 +1,151 @@
+.coin-detail-container {
+  margin: 50px;
+  margin-top: 90px;
+}
+
+.coin-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(33, 182, 183, 0.2);
+}
+
+.coin-heading-container .coin-name {
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.coin-heading-container p {
+  font-size: 16px;
+}
+
+.stats-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.coin-details-heading {
+  font-weight: 700px;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.coin-stats {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(33, 182, 183, 0.2);
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.coin-stats:hover {
+  border-bottom: 1px solid rgba(33, 182, 183, 0.7);
+  background: rgba(33, 182, 183, 0.1);
+}
+
+.coin-stats-name {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.stats-icon {
+  color: var(--primary-color);
+}
+
+.stats {
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.coin-desc-link {
+  display: flex;
+  margin-top: 20px;
+}
+
+.coin-desc {
+  flex: 0.5;
+  margin-right: 60px;
+}
+
+.coin-desc h3 {
+  color: var(--primary-color);
+}
+
+.coin-desc a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.coin-links {
+  flex: 0.5;
+}
+
+.coin-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(33, 182, 183, 0.2);
+  padding: 0 20px;
+}
+
+.coin-link:hover {
+  border-bottom: 1px solid rgba(33, 182, 183, 0.7);
+  background: rgba(33, 182, 183, 0.1);
+}
+
+.link-name {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin: 0;
+  padding: 20px 10px;
+}
+
+.coin-link a {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.line-chart {
+  margin: 0 60px;
+}
+
+@media (max-width: 1000px) {
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .coin-desc-link {
+    flex-direction: column;
+  }
+
+  .line-chart {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .coin-detail-container {
+    margin: 20px;
+    margin-top: 90px;
+  }
+
+  .coin-heading-container .coin-name {
+    font-size: 25px;
+  }
+
+  .coin-stats {
+    padding: 0;
+  }
+
+  .coin-link {
+    padding: 0 5px;
+  }
+}

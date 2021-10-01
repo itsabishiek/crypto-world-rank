@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:root {
+  --text-color: #c4f5f5;
+  --text-color-primary: #18668a;
+  --text-color-secondary: #b3c5cd;
+
+  --primary-color: #21b6b7;
+
+  --background-color: #252329;
+  --background-color-dark: #222024;
+  --background-color-light: #120f13;
+
+  --font-family: "Poppins", sans-serif;
+  --box-shadow: 0px 2px 8px rgba(33, 182, 183, 0.1);
+  --border-color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  color: inherit;
+  font: inherit;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: whitesmoke;
+}
+
+.loader {
+  height: 90vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

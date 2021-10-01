@@ -1,0 +1,64 @@
+.footer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: var(--background-color-dark);
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 2.5rem 1.5rem;
+}
+
+.footer .container h2 {
+  color: var(--primary-color);
+  font-size: 25px;
+}
+
+.footer .container p {
+  font-size: 15.5px;
+}
+
+.footer .follow div a {
+  color: var(--primary-color);
+  margin-right: 12px;
+}
+
+.footer .rights {
+  text-align: center;
+}
+
+.footer .rights a {
+  color: var(--primary-color);
+}
+
+.footer .move-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .move-up span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer .move-up span:hover {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+}

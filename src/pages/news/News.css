@@ -1,0 +1,137 @@
+.select-box {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-news {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.news-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.news-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.news-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--background-color-dark);
+  padding: 16px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+.news-card:hover {
+  animation: animate 1.5s ease-in-out infinite;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 2px 8px rgba(33, 182, 183, 0.5);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news-header h1 {
+  color: var(--primary-color);
+  font-size: 17px;
+}
+
+.news-thumb {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: 0px 2px 8px rgba(33, 182, 183, 0.3);
+}
+
+.news-card p {
+  font-size: 15px;
+}
+
+.news-provider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.provider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.provider h3 {
+  white-space: nowrap;
+  margin-left: 8px;
+  font-size: 15px;
+}
+
+.provider-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.timeperiod {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .news-card-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .select-box {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .news-card-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}

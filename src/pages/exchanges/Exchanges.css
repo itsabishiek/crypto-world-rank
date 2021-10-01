@@ -1,0 +1,135 @@
+.exchange-wrapper {
+  margin: 20px;
+}
+
+.field-container {
+  margin: 20px;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+  background: rgba(33, 182, 183, 0.1);
+  border-radius: 4px;
+}
+
+.field-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.field-item span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.exchange-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.exchange-header h4 {
+  margin: 0;
+}
+
+.exchange-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.exchange-title h4 {
+  color: var(--primary-color);
+}
+
+.exchange-accordion {
+  border: 1px solid rgba(33, 182, 183, 0.2);
+}
+
+.exchange-accordion:hover {
+  border: 1px solid rgba(33, 182, 183, 0.5);
+}
+
+.exchange-image {
+  width: 40px;
+  height: 40px;
+}
+
+.exchange-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.exchange-item h4 {
+  margin: 0;
+}
+
+.exchange-details {
+  color: var(--text-color);
+}
+
+.exchange-details h3 {
+  color: var(--primary-color);
+}
+
+.exchange-details a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .exchange-image {
+    display: none;
+  }
+
+  .field-item span:nth-child(1) {
+    display: none;
+  }
+
+  .field-item {
+    justify-content: space-around;
+    margin-left: 35px;
+  }
+
+  .exchange-item:nth-child(1) {
+    display: none;
+  }
+
+  .exchange-items {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 380px) {
+  .field-item {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .field-item span:nth-child(2) {
+    display: none;
+  }
+
+  .field-item {
+    justify-content: flex-end;
+    margin-left: 0;
+  }
+
+  .exchange-item:nth-child(2) {
+    display: none;
+  }
+
+  .exchange-items {
+    justify-content: flex-end;
+  }
+}
