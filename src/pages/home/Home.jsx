@@ -8,6 +8,7 @@ import { useGetCryptosQuery } from "../../services/cryptoApi";
 import Loader from "../../components/Loader";
 import millify from "millify";
 import { ArrowForwardIos } from "@mui/icons-material";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
@@ -118,6 +119,7 @@ const Home = () => {
 
         <News simplified />
       </div>
+      <Footer />
     </>
   );
 };

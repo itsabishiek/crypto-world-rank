@@ -31,7 +31,6 @@ const Cryptocurrencies = ({ simplified }) => {
           <div className="search-crypto">
             <SearchRounded color="inherit" />
             <input
-              type="text"
               className="search-input"
               placeholder="Search Cryptocurrencies"
               onChange={(e) => setSearch(e.target.value)}

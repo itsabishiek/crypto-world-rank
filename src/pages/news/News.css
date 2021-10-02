@@ -115,7 +115,7 @@
   font-size: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .news-card-container {
     flex: 0 0 50%;
     max-width: 50%;

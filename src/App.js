@@ -7,7 +7,6 @@ import Cryptocurrencies from "./pages/crypto/Cryptocurrencies";
 import CryptoDetails from "./pages/cryptoDetails/CryptoDetails";
 import Exchanges from "./pages/exchanges/Exchanges";
 import News from "./pages/news/News";
-import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -39,8 +38,6 @@ function App() {
           </Route>
         </Switch>
       </div>
-
-      <Footer />
     </Router>
   );
 }

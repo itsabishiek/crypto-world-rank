@@ -1,3 +1,12 @@
+.select-box {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
 .coin-detail-container {
   margin: 50px;
   margin-top: 90px;

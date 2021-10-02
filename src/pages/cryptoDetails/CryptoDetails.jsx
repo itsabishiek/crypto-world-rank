@@ -118,18 +118,7 @@ const CryptoDetails = () => {
       </div>
 
       <ThemeProvider theme={darkTheme}>
-        <Box
-          color="#21b6b7"
-          style={{
-            maxWidth: 300,
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginTop: 30,
-            marginBottom: 20,
-          }}
-        >
+        <Box className="select-box" color="#21b6b7">
           <FormControl fullWidth color="primary" style={{ color: "#c4f5f5" }}>
             <InputLabel id="demo-simple-select-label" color="primary">
               Select Time period

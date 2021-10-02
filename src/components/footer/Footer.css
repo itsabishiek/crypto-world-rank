@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   background: var(--background-color-dark);
+  margin-top: 40px;
 }
 
 .footer .container {
@@ -37,6 +38,11 @@
   text-align: center;
 }
 
+.footer .rights .text-rights {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
 .footer .rights a {
   color: var(--primary-color);
 }
@@ -61,4 +67,16 @@
 .footer .move-up span:hover {
   background: transparent;
   border: 2px solid var(--primary-color);
+}
+
+@media (max-width: 1000px) {
+  .footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .footer .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
